@@ -10,18 +10,19 @@ The closest way is the WindowStyle hidden switch available from PowerShell versi
 
 ```powershell
 # PowerShell 2 to 5.1
-PowerShell.exe -WindowStyle hidden Run-Script.ps1
+PowerShell.exe -WindowStyle hidden -File Run-Script.ps1
 ```
 
 ```powershell
 # PowerShell 6 to 7
-pwsh.exe -WindowStyle hidden Run-Script.ps1
+pwsh.exe -WindowStyle hidden -File Run-Script.ps1
 ```
 
 This will still display a temporary PowerShell window.  
-To completely remove the window from the use context use this vbs to call the PowerShell script:
 
-ADD GIF HERE OF POPUP
+![Pop Up](./images/PopUp.gif)
+
+To completely remove the window from the use context use this vbs to call the PowerShell script:
 
 ```command
 wscript.exe PsRun.vbs Run-Script.ps1
@@ -29,4 +30,4 @@ wscript.exe PsRun.vbs Run-Script.ps1
 
 The most common use case for this operation is a scheduled task that needs to run in the user context and needs to not display an annoying pop-up.
 
-ADD SCREEN SHOT HERE
+![Task Properties](./images/TaskProperties.png)
