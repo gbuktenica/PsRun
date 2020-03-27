@@ -13,7 +13,7 @@ Dim PsPath
 
 Set fso = CreateObject("Scripting.FileSystemObject")
 If fso.FileExists("C:\Program Files\PowerShell\7\pwsh.exe") Then
-    PsPath="""C:\Program Files\PowerShell\7-preview\pwsh.exe"""
+    PsPath="""C:\Program Files\PowerShell\7\pwsh.exe"""
 ElseIf fso.FileExists("C:\Program Files\PowerShell\7-preview\pwsh.exe") Then
     PsPath="""C:\Program Files\PowerShell\7-preview\pwsh.exe"""
 ElseIf fso.FileExists("C:\Program Files\PowerShell\6\pwsh.exe") Then
