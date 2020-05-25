@@ -5,12 +5,12 @@
 [![PowerShell 5](https://img.shields.io/badge/PowerShell_5-Supported-blue.svg)](https://github.com/PowerShell/PowerShell/releases)
 [![PowerShell 6](https://img.shields.io/badge/PowerShell_6-Supported-blue.svg)](https://github.com/PowerShell/PowerShell/releases)
 [![PowerShell 7](https://img.shields.io/badge/PowerShell_7-Supported-blue.svg)](https://github.com/PowerShell/PowerShell/releases)  
-Running PowerShell scripts in a user context without any window being displayed at all is not possible.  
+Running PowerShell scripts in a user context without any window being displayed at all is not possible just using PowerShell.  
 The closest way is the WindowStyle hidden switch available from PowerShell version 2 onwards:
 
 ```powershell
 # PowerShell 2 to 5.1
-PowerShell.exe -WindowStyle hidden -File Run-Script.ps1
+powershell.exe -WindowStyle hidden -File Run-Script.ps1
 ```
 
 ```powershell
